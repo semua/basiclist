@@ -31,23 +31,23 @@ Install
 
 Usage
 ---------------
-// first create a compare function
-func Compare(val0 interface{}, val1 interface{}) int {
-	pubt0 := val0.(Article).pubtime - val0.(Article).pubtime%(3600*12)
-	pubt1 := val1.(Article).pubtime - val1.(Article).pubtime%(3600*12)
-	if pubt0-pubt1 == 0 {
-		return 0
+	// first create a compare function
+	func Compare(val0 interface{}, val1 interface{}) int {
+		pubt0 := val0.(Article).pubtime - val0.(Article).pubtime%(3600*12)
+		pubt1 := val1.(Article).pubtime - val1.(Article).pubtime%(3600*12)
+		if pubt0-pubt1 == 0 {
+			return 0
+		}
+		if pubt0-pubt1 > 0 {
+			return 1
+		}
+		return -1
 	}
-	if pubt0-pubt1 > 0 {
-		return 1
+	type Article struct {
+		title   string
+		pubtime int64
 	}
-	return -1
-}
-type Article struct {
-	title   string
-	pubtime int64
-}
-// second on your main
+	// second on your main
 
     // New a BasicList
     bList := NewBasicList()
