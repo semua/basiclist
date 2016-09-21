@@ -13,15 +13,6 @@ fork change
 I use a two-way linked-list data structure + map[key], to sort, compare and get interface{}
 
 all codes are coveraged.
-github.com\semua\basiclist\basiclist.go:23:	NewBasicList		100.0%
-github.com\semua\basiclist\basiclist.go:31:	Insert			100.0%
-github.com\semua\basiclist\basiclist.go:76:	GetByKey		100.0%
-github.com\semua\basiclist\basiclist.go:83:	Equal			100.0%
-github.com\semua\basiclist\basiclist.go:105:	LessThanOrEqual		100.0%
-github.com\semua\basiclist\basiclist.go:127:	GreaterThanOrEqual	100.0%
-github.com\semua\basiclist\basiclist.go:148:	Remove			100.0%
-github.com\semua\basiclist\basiclist.go:169:	List			100.0%
-github.com\semua\basiclist\basiclist.go:191:	Print			100.0%
 total:						(statements)		100.0%
 
 Install
